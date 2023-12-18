@@ -12,7 +12,7 @@
 
         body, html {
             margin: 0;
-            padding: 80px;
+            padding: 0; /* Removed the 80px padding */
             font-family: 'Roboto', sans-serif;
             background: linear-gradient(135deg, #C6EA8D 0%, #FE90AF 100%);
             background-attachment: fixed; /* Fixed background */
@@ -27,6 +27,7 @@
             width: 100%;
             z-index: 0; /* Lower z-index so content scrolls over it */
             padding: 20px 0;
+            background: rgba(0, 0, 0, 0.5); /* Optional: Add a background to make text readable on scroll */
         }
         .header h1, .header p {
             font-family: 'DM Serif Display', serif;
@@ -50,8 +51,8 @@
             text-align: right;
             position: fixed;
             width: 100%;
-            top: 40px; /* Adjust based on header height */
-            z-index: 1000;
+            top: 180px; /* Adjusted based on header height */
+            z-index: 10; /* Higher z-index for navigation */
         }
 
         .navigation a {
@@ -70,8 +71,8 @@
 
         .main-content {
             position: relative;
-            z-index: 2000;
-            padding-top: 800px; /* Adjust according to header and navigation height */
+            z-index: 100; /* Higher z-index for main content */
+            padding-top: 250px; /* Adjusted padding-top to push content below header and navigation */
         }
 
         .section {
@@ -132,34 +133,36 @@
     <!-- Add other navigation links as needed -->
 </div>
 
-<div class="section" id="bio">
-    <div class="section-light">
-        <h2 id="about-title"></h2>
-        <p id="about-description"></p>
-    </div>
-</div>
-
-<div class="section" id="cv">
-    <div class="section-light">
-        <h2 id="cv-title"></h2>
-        <p id="cv-summary"></p>
-    </div>
-</div>
-
-<div class="section" id="projects">
-    <div class="section-light">
-        <h2>My Projects</h2>
-        <div class="gallery" id="projects-gallery">
-            <!-- Projects will be inserted here -->
+<div class="main-content">
+    <div class="section" id="bio">
+        <div class="section-light">
+            <h2 id="about-title"></h2>
+            <p id="about-description"></p>
         </div>
     </div>
-</div>
 
-<div class="section" id="contact">
-    <div class="section-light">
-        <h2>Contact Me</h2>
-        <p id="contact-prompt"></p>
-        <!-- Contact form elements -->
+    <div class="section" id="cv">
+        <div class="section-light">
+            <h2 id="cv-title"></h2>
+            <p id="cv-summary"></p>
+        </div>
+    </div>
+
+    <div class="section" id="projects">
+        <div class="section-light">
+            <h2>My Projects</h2>
+            <div class="gallery" id="projects-gallery">
+                <!-- Projects will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <div class="section-light">
+            <h2>Contact Me</h2>
+            <p id="contact-prompt"></p>
+            <!-- Contact form elements -->
+        </div>
     </div>
 </div>
 
