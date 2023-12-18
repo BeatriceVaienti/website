@@ -3,37 +3,99 @@
 <head>
     <title>Beatrice Vaienti - PhD Student @ DHLAB, EPFL</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: #333;
-            background-color: #f8f8f8; /* Light background */
+        /* Add Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        /* Basic reset */
+        *, *:before, *:after {
+            box-sizing: border-box;
         }
+        body, h1, h2, p, a {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Style for the body */
+        body {
+            background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
         .header {
-            background-color: #6fbaed; /* Vibrant header color */
-            padding: 20px;
+            padding: 40px;
             text-align: center;
         }
+
+        /* Navigation menu styles */
         .navigation {
-            background-color: #333;
+            background-color: #fff;
+            color: #333;
             overflow: hidden;
+            padding: 10px 0;
         }
         .navigation a {
-            float: left;
+            float: right;
             display: block;
-            color: white;
+            color: #333;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
         }
         .navigation a:hover {
             background-color: #ddd;
             color: black;
         }
+
+        /* Section styles */
         .section {
             padding: 20px;
             text-align: center;
         }
-        /* Add more styles as per your design */
+        .section-light {
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            padding: 40px;
+            border-radius: 10px;
+        }
+        .section img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        /* Gallery styles */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery-item {
+            margin: 10px;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -41,53 +103,57 @@
 <div class="header">
     <h1>Beatrice Vaienti</h1>
     <p>PhD Student & Researcher</p>
-    <!-- Optional: Add your photo here -->
 </div>
 
 <div class="navigation">
-    <a href="#bio">Bio</a>
-    <a href="#cv">CV</a>
-    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
+    <a href="#projects">Projects</a>
+    <a href="#cv">CV</a>
+    <a href="#bio">About</a>
 </div>
 
 <div class="section" id="bio">
-    <h2>About Me</h2>
-    <p><!-- Your bio goes here --></p>
+    <div class="section-light">
+        <h2>About Me</h2>
+        <p><!-- Your bio goes here --></p>
+    </div>
 </div>
 
 <div class="section" id="cv">
-    <h2>My CV</h2>
-    <p><!-- Summary of your CV or a link to download --></p>
+    <div class="section-light">
+        <h2>My CV</h2>
+        <p><!-- Summary of your CV or a link to download --></p>
+    </div>
 </div>
 
 <div class="section" id="projects">
-    <h2>My Projects</h2>
-    <!-- Insert your projects with images and descriptions here -->
-</div>
-
-<div class="section">
-    <h2>Connect with Me</h2>
-    <!-- Insert social media icons and links here -->
-    <!-- Link to your university page -->
+    <div class="section-light">
+        <h2>My Projects</h2>
+        <div class="gallery">
+            <!-- Insert your projects with images and descriptions here -->
+            <!-- Example: -->
+            <!-- <div class="gallery-item">
+                <img class="gallery-image" src="path-to-your-image.jpg" alt="Project Description">
+                <p>Project Title</p>
+            </div> -->
+        </div>
+    </div>
 </div>
 
 <div class="section" id="contact">
-    <h2>Contact Me</h2>
-    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-        Name:<br>
-        <input type="text" name="name"><br>
-        E-mail:<br>
-        <input type="text" name="mail"><br>
-        Comment:<br>
-        <input type="text" name="comment" size="50"><br><br>
-        <input type="submit" value="Send">
-        <input type="reset" value="Reset">
-    </form>
+    <div class="section-light">
+        <h2>Contact Me</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name"><br>
+            <input type="email" name="mail" placeholder="Your Email"><br>
+            <textarea name="comment" placeholder="Your Message"></textarea><br>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
 </div>
 
 <div class="footer">
-    <p>&copy; 2023 Beatrice Vaienti</p>
+    <p>&copy; 2023 Beatrice Vaienti. All rights reserved.</p>
 </div>
 
 </body>
