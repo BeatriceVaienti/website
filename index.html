@@ -14,8 +14,9 @@
             margin: 0;
             padding: 0; /* Removed the 80px padding */
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #C6EA8D 0%, #FE90AF 100%);
-            background-attachment: fixed; /* Fixed background */
+            background: #ED4264;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #FFEDBC, #ED4264);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #FFEDBC, #ED4264); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             color: #333;
             line-height: 1.6;
         }
