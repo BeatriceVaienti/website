@@ -81,3 +81,104 @@
 
         .footer {
             background-color: #EF629F;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1 id="header-title"></h1>
+    <p id="header-subtitle"></p>
+</div>
+
+<div class="navigation">
+    <a href="#work" id="navigation-work">Work</a>
+    <a href="#about" id="navigation-about">About</a>
+    <!-- Add other navigation links as needed -->
+</div>
+
+<div class="section" id="bio">
+    <div class="section-light">
+        <h2 id="about-title"></h2>
+        <p id="about-description"></p>
+    </div>
+</div>
+
+<div class="section" id="cv">
+    <div class="section-light">
+        <h2 id="cv-title"></h2>
+        <p id="cv-summary"></p>
+    </div>
+</div>
+
+<div class="section" id="projects">
+    <div class="section-light">
+        <h2>My Projects</h2>
+        <div class="gallery" id="projects-gallery">
+            <!-- Projects will be inserted here -->
+        </div>
+    </div>
+</div>
+
+<div class="section" id="contact">
+    <div class="section-light">
+        <h2>Contact Me</h2>
+        <p id="contact-prompt"></p>
+        <!-- Contact form elements -->
+    </div>
+</div>
+
+<div class="footer">
+    <p id="footer-copyright"></p>
+</div>
+
+<script>
+    fetch('content.json')
+    .then(response => response.json())
+    .then(data => {
+        // Header
+        document.getElementById('header-title').textContent = data.header.title;
+        document.getElementById('header-subtitle').textContent = data.header.subtitle;
+
+        // Navigation (if required)
+        // document.getElementById('navigation-work').textContent = 'Work'; // Text is static, as it's just a label
+        // document.getElementById('navigation-about').textContent = 'About'; // Text is static, as it's just a label
+
+        // About section
+        document.getElementById('about-title').textContent = data.about.title;
+        document.getElementById('about-description').textContent = data.about.description;
+
+        // CV section
+        document.getElementById('cv-title').textContent = data.cv.title;
+        document.getElementById('cv-summary').textContent = data.cv.summary;
+
+        // Projects section
+        const projectsGallery = document.getElementById('projects-gallery');
+        data.projects.forEach(project => {
+            const projectItem = document.createElement('div');
+            projectItem.className = 'gallery-item';
+            projectItem.innerHTML = `
+                <img class="gallery-image" src="${project.image}" alt="${project.title}">
+                <p>${project.title}</p>
+                <p>${project.description}</p>
+            `;
+            projectsGallery.appendChild(projectItem);
+        });
+
+        // Contact section
+        document.getElementById('contact-prompt').textContent = data.contact.prompt;
+
+        // Footer
+        document.getElementById('footer-copyright').textContent = data.footer.copyright;
+    })
+    .catch(error => {
+        console.error('Error fetching content:', error);
+    });
+</script>
+
+</body>
+</html>
