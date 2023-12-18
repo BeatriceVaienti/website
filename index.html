@@ -3,10 +3,8 @@
 <head>
     <title>Beatrice Vaienti - PhD Student @ DHLAB, EPFL</title>
     <style>
-        /* Add Google Font */
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-        /* Basic reset */
         *, *:before, *:after {
             box-sizing: border-box;
         }
@@ -16,30 +14,28 @@
             font-family: 'Roboto', sans-serif;
         }
 
-        /* Style for the body */
         body {
-            background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
-            color: white;
+            background: linear-gradient(135deg, #EF629F 0%, #EECDA3 100%);
+            color: #333;
             line-height: 1.6;
         }
 
-        /* Header styles */
         .header {
-            padding: 40px;
+            padding: 80px;
             text-align: center;
+            color: white;
         }
 
-        /* Navigation menu styles */
         .navigation {
-            background-color: #fff;
-            color: #333;
+            background-color: transparent;
+            color: white;
             overflow: hidden;
             padding: 10px 0;
+            text-align: right;
         }
         .navigation a {
-            float: right;
-            display: block;
-            color: #333;
+            display: inline-block;
+            color: white;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
@@ -47,11 +43,9 @@
             font-weight: 700;
         }
         .navigation a:hover {
-            background-color: #ddd;
-            color: black;
+            color: #EF629F;
         }
 
-        /* Section styles */
         .section {
             padding: 20px;
             text-align: center;
@@ -62,12 +56,7 @@
             padding: 40px;
             border-radius: 10px;
         }
-        .section img {
-            width: 100px;
-            border-radius: 50%;
-        }
 
-        /* Gallery styles */
         .gallery {
             display: flex;
             flex-wrap: wrap;
@@ -79,6 +68,7 @@
             border-radius: 10px;
             overflow: hidden;
             transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
         .gallery-item:hover {
             transform: translateY(-5px);
@@ -89,71 +79,36 @@
             display: block;
         }
 
-        /* Footer styles */
         .footer {
-            background-color: #333;
+            background-color: #EF629F;
             color: white;
             padding: 20px;
             text-align: center;
         }
+
+        /* Add your own styles here to match the example */
+        /* Example: Change font sizes, add new sections, modify colors, etc. */
+
     </style>
 </head>
 <body>
 
 <div class="header">
-    <h1>Beatrice Vaienti</h1>
-    <p>PhD Student & Researcher</p>
+    <h1>Hello, I'm Beatrice.</h1>
+    <p>I'm a PhD Student in Digital Humanities.</p>
 </div>
 
 <div class="navigation">
-    <a href="#contact">Contact</a>
-    <a href="#projects">Projects</a>
-    <a href="#cv">CV</a>
-    <a href="#bio">About</a>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <!-- Add other links as needed -->
 </div>
 
-<div class="section" id="bio">
-    <div class="section-light">
-        <h2>About Me</h2>
-        <p><!-- Your bio goes here --></p>
-    </div>
-</div>
-
-<div class="section" id="cv">
-    <div class="section-light">
-        <h2>My CV</h2>
-        <p><!-- Summary of your CV or a link to download --></p>
-    </div>
-</div>
-
-<div class="section" id="projects">
-    <div class="section-light">
-        <h2>My Projects</h2>
-        <div class="gallery">
-            <!-- Insert your projects with images and descriptions here -->
-            <!-- Example: -->
-            <!-- <div class="gallery-item">
-                <img class="gallery-image" src="path-to-your-image.jpg" alt="Project Description">
-                <p>Project Title</p>
-            </div> -->
-        </div>
-    </div>
-</div>
-
-<div class="section" id="contact">
-    <div class="section-light">
-        <h2>Contact Me</h2>
-        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your Name"><br>
-            <input type="email" name="mail" placeholder="Your Email"><br>
-            <textarea name="comment" placeholder="Your Message"></textarea><br>
-            <input type="submit" value="Send Message">
-        </form>
-    </div>
-</div>
+<!-- Add your content sections here following the example -->
+<!-- Each section should have a .section-light class and contain a .gallery for projects -->
 
 <div class="footer">
-    <p>&copy; 2023 Beatrice Vaienti. All rights reserved.</p>
+    <p>&copy; 2023 Beatrice Vaienti.</p>
 </div>
 
 </body>
