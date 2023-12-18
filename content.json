@@ -1,0 +1,33 @@
+{
+  "header": {
+    "title": "Hello, I'm Beatrice.",
+    "subtitle": "I'm a PhD Student in Digital Humanities."
+  },
+  "navigation": {
+    "work": "#work",
+    "about": "#about"
+    // Add other navigation items here
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am an architect and building engineer, with way too many hobbies (especially singing, pottery making and anything related to DIY!). I am currently doing a PhD in Digital Humanities at the DHLAB (EPFL). In my research I am studying the urban evolution of Jerusalem between 1840 and 1940 through the lenses of western cartography."
+  },
+  "cv": {
+    "title": "My CV",
+    "summary": "Summary of your CV or a link to download."
+  },
+  "projects": [
+    {
+      "image": "path-to-your-image.jpg",
+      "title": "Project Title",
+      "description": "Project Description"
+    }
+    // Add other projects here
+  ],
+  "contact": {
+    "prompt": "Your Message"
+  },
+  "footer": {
+    "copyright": "&copy; 2023 Beatrice. All rights reserved."
+  }
+}
