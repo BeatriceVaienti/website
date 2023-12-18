@@ -6,7 +6,6 @@
   "navigation": {
     "work": "#work",
     "about": "#about"
-    // Add other navigation items here
   },
   "about": {
     "title": "About Me",
@@ -22,7 +21,6 @@
       "title": "Project Title",
       "description": "Project Description"
     }
-    // Add other projects here
   ],
   "contact": {
     "prompt": "Your Message"
