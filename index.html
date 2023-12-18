@@ -9,48 +9,40 @@
         *, *:before, *:after {
             box-sizing: border-box;
         }
-            body, html {
-        margin: 0;
-        padding: 0;
-        font-family: 'Roboto', sans-serif;
-        }
-        .header {
-            position: fixed; /* Fixed position */
-            width: 100%; /* Header will occupy the full width */
-            z-index: 10; /* Ensure the header is above other content */
-            background: linear-gradient(135deg, #FF61D2 0%, #FE9090 100%);
-            padding: 20px 0; /* Adjust padding as needed */
-        }
-        body, h1, h2, p, a {
+        body, html {
             margin: 0;
             padding: 0;
             font-family: 'Roboto', sans-serif;
-        }
-
-        body {
-            background: linear-gradient(135deg, #FF61D2 0%, #FE9090 100%); 
+            background: linear-gradient(135deg, #C6EA8D 0%, #FE90AF 100%);
             color: #333;
             line-height: 1.6;
+            padding-top: 160px; /* Adjust as needed for header height */
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: linear-gradient(135deg, #C6EA8D 0%, #FE90AF 100%);
+            padding: 20px 0;
         }
 
         .header h1, .header p {
             font-family: 'DM Serif Display', serif;
             color: white;
+            text-align: center;
         }
+
         .header h1 {
-            font-family: 'DM Serif Display', serif;
-            color: white;
-            text-align: center;
-            font-size: 96px; /* Example size, adjust as needed */
-            margin-top: 80px; /* Add some spacing at the top */
+            font-size: 96px;
         }
+
         .header p {
-            font-family: 'DM Serif Display', serif;
-            color: white;
-            text-align: center;
-            font-size: 48px; /* Example size, adjust as needed */
-            margin-bottom: 80px; /* Add some spacing at the bottom */
+            font-size: 48px;
         }
+
         .navigation {
             background-color: transparent;
             color: white;
@@ -168,10 +160,6 @@
         // Header
         document.getElementById('header-title').textContent = data.header.title;
         document.getElementById('header-subtitle').textContent = data.header.subtitle;
-
-        // Navigation (if required)
-        // document.getElementById('navigation-work').textContent = 'Work'; // Text is static, as it's just a label
-        // document.getElementById('navigation-about').textContent = 'About'; // Text is static, as it's just a label
 
         // About section
         document.getElementById('about-title').textContent = data.about.title;
