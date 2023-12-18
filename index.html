@@ -99,8 +99,8 @@
 </div>
 
 <div class="navigation">
-    <a href="#work">Work</a>
-    <a href="#about">About</a>
+    <a id="navigation-work"></a>
+    <a id="navigation-about"></a>
     <!-- Add other links as needed -->
 </div>
 
@@ -108,7 +108,7 @@
 <!-- Each section should have a .section-light class and contain a .gallery for projects -->
 
 <div class="footer">
-    <p>&copy; 2023 Beatrice Vaienti. All Rights Reserved.</p>
+    <p> id="footer-copyright" ></p>
 </div>
     
     <!-- JavaScript to load content from JSON -->
@@ -119,10 +119,9 @@
             // Inject header content
             document.getElementById('header-title').textContent = data.header.title;
             document.getElementById('header-subtitle').textContent = data.header.subtitle;
-
-            // Inject other content throughout the page
-            // ...
-
+            document.getElementById('navigation-work').textContent = data.navigation.work;
+            document.getElementById('navigation-about').textContent = data.navigation.about;
+            document.getElementById('footer-copyright').textContent = data.footer.copyright;
         })
         .catch(error => {
             console.error('Error fetching content:', error);
