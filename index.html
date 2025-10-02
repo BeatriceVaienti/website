@@ -1,219 +1,212 @@
-<!DOCTYPE html>
-<html>
-<head>
-    
-    <title>Beatrice Vaienti - PhD Student @ DHLAB, EPFL</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
-
-        *, *:before, *:after {
-            box-sizing: border-box;
-        }
-
-        body, html {
-            margin: 0;
-            padding: 0; /* Removed the 80px padding */
-            font-family: 'Roboto', sans-serif;
-            background: #ED4264;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(45deg, #FFEDBC, #ED4264);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(45deg, #FFEDBC, #ED4264); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .header {
-            position: fixed; /* Fixed header */
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 0; /* Lower z-index so content scrolls over it */
-            padding: 20px 0;
-        }
-        .header h1, .header p {
-            font-family: 'DM Serif Display', serif;
-            color: white;
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 96px;
-        }
-
-        .header p {
-            font-size: 48px;
-            transform: translateY(-20px);
-        }
-
-        .navigation {
-            background-color: transparent;
-            color: white;
-            overflow: hidden;
-            padding: 10px 0;
-            margin-right: 50px;
-            text-align: right;
-            position: fixed;
-            width: 100%;
-            top: 30px; /* Adjusted based on header height */
-            right: 20px;
-            z-index: 10; /* Higher z-index for navigation */
-        }
-
-        .navigation a {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-
-        .navigation a:hover {
-            color: #EF629F;
-        }
-
-        .main-content {
-            position: relative;
-            z-index: 100; /* Higher z-index for main content */
-            padding-top: 500px; /* Adjusted padding-top to push content below header and navigation */
-        }
-
-        .section {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .section-light {
-            background-color: rgba(255, 255, 255, 0.9);
-            margin: 20px;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2); /* Adding shadow */
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .gallery-item {
-            margin: 10px;
-            background: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-
-        .gallery-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .gallery-image {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .footer {
-            background-color: #ED4264;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-
-<div class="header">
-    <h1 id="header-title"></h1>
-    <p id="header-subtitle"></p>
-</div>
-
-<div class="navigation">
-    <a href="#work" id="navigation-work">Work</a>
-    <a href="#about" id="navigation-about">About</a>
-    <!-- Add other navigation links as needed -->
-</div>
-
-<div class="main-content">
-    <div class="section" id="bio">
-        <div class="section-light">
-            <h2 id="about-title"></h2>
-            <p id="about-description"></p>
+<body id="iftf">
+  <!-- Fixed header -->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Beatrice Vaienti - PhD Student @ DHLAB, EPFL
+  </title>
+  <header role="banner" class="header">
+    <h1 id="i23e">Hello, I'm Beatrice Vaienti.
+    </h1>
+    <p id="iqrjr"> ...
+    </p>
+  </header>
+  <!-- Top navigation -->
+  <nav aria-label="Primary" class="navigation">
+    <a href="#projects" id="navigation-work">Work</a>
+    <a href="#bio" id="navigation-about">About</a>
+  </nav>
+  <main id="main" role="main" class="main-content">
+    <!-- About -->
+    <section id="bio" class="section">
+      <div id="if1ih" class="section-light">
+        <h2>About Me
+        </h2>
+        <p id="i5032">
+          I recently completed my PhD in Digital Humanities 
+          at the Digital Humanities Laboratory - DHLAB (EPFL).
+          I hold a MSc in Building Engineering and Architecture.
+          In my research I studied the Western cartographic depiction of Jerusalem 
+          between 1810 and 1925, focusing on errors and biases, 
+          and how they can be used to discover historical information.
+        </p>
+      </div>
+    </section>
+    <!-- CV -->
+    <section id="cv" class="section">
+      <div class="section-light">
+        <h2>My CV
+        </h2>
+        <p>
+          Summary of your CV or a link to download.
+          <!-- Example: <a href="Beatrice_Vaienti_CV.pdf" download>Download my CV (PDF)</a> -->
+        </p>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section-light">
+        <h2>My Projects
+        </h2>
+        <div class="gallery">
+          <article class="gallery-item">
+            <img loading="lazy" src="path-to-your-image.jpg" alt="Project Title cover image" id="ierdf" class="gallery-image"/>
+            <p>Project Title
+            </p>
+            <p>Project Description
+            </p>
+          </article>
+          <!-- Duplicate <article> blocks for more projects -->
         </div>
-    </div>
-
-    <div class="section" id="cv">
-        <div class="section-light">
-            <h2 id="cv-title"></h2>
-            <p id="cv-summary"></p>
-        </div>
-    </div>
-
-    <div class="section" id="projects">
-        <div class="section-light">
-            <h2>My Projects</h2>
-            <div class="gallery" id="projects-gallery">
-                <!-- Projects will be inserted here -->
-            </div>
-        </div>
-    </div>
-
-    <div class="section" id="contact">
-        <div class="section-light">
-            <h2>Contact Me</h2>
-            <p id="contact-prompt"></p>
-            <!-- Contact form elements -->
-        </div>
-    </div>
-</div>
-
-<div class="footer">
-    <p id="footer-copyright"></p>
-</div>
-
-<script>
-    fetch('content.json')
-    .then(response => response.json())
-    .then(data => {
-        // Header
-        document.getElementById('header-title').textContent = data.header.title;
-        document.getElementById('header-subtitle').textContent = data.header.subtitle;
-
-        // About section
-        document.getElementById('about-title').textContent = data.about.title;
-        document.getElementById('about-description').textContent = data.about.description;
-
-        // CV section
-        document.getElementById('cv-title').textContent = data.cv.title;
-        document.getElementById('cv-summary').textContent = data.cv.summary;
-
-        // Projects section
-        const projectsGallery = document.getElementById('projects-gallery');
-        data.projects.forEach(project => {
-            const projectItem = document.createElement('div');
-            projectItem.className = 'gallery-item';
-            projectItem.innerHTML = `
-                <img class="gallery-image" src="${project.image}" alt="${project.title}">
-                <p>${project.title}</p>
-                <p>${project.description}</p>
-            `;
-            projectsGallery.appendChild(projectItem);
-        });
-
-        // Contact section
-        document.getElementById('contact-prompt').textContent = data.contact.prompt;
-
-        // Footer
-        document.getElementById('footer-copyright').textContent = data.footer.copyright;
-    })
-    .catch(error => {
-        console.error('Error fetching content:', error);
-    });
-</script>
-
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="section-light">
+        <h2>Contact Me
+        </h2>
+        <p>Your Message
+        </p>
+        <!-- Simple contact option (edit to your email) -->
+        <!-- <p><a href="mailto:you@example.com">you@example.com</a></p> -->
+      </div>
+    </section>
+  </main>
+  <footer role="contentinfo" class="footer">
+    <p>© 2023 Beatrice Vaienti. All rights reserved.
+    </p>
+  </footer>
+  <!-- No JS needed anymore; removed JSON fetch -->
 </body>
-</html>
+<style>* {
+  box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  *{
+    box-sizing:border-box;
+  }
+  body{
+    margin:0;
+  }
+  *, *:before, *:after{
+    box-sizing:border-box;
+  }
+  html, body{
+    margin:0;
+    padding:0;
+    font-family:'Roboto', sans-serif;
+    background:linear-gradient(45deg, #FFEDBC, #ED4264);
+    color:#333;
+    line-height:1.6;
+  }
+  .header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:0;
+    padding:20px 0;
+    text-align:center;
+    color:white;
+  }
+  .header h1, .header p{
+    font-family:'DM Serif Display', serif;
+    margin:0;
+  }
+  .header h1{
+    font-size:96px;
+  }
+  .header p{
+    font-size:48px;
+    transform:translateY(-20px);
+  }
+  .navigation{
+    background-color:transparent;
+    color:white;
+    overflow:hidden;
+    padding:10px 0;
+    margin-right:50px;
+    text-align:right;
+    position:fixed;
+    width:100%;
+    top:30px;
+    right:20px;
+    z-index:10;
+  }
+  .navigation a{
+    display:inline-block;
+    color:white;
+    padding:14px 16px;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:700;
+  }
+  .navigation a:hover{
+    color:#EF629F;
+  }
+  .main-content{
+    position:relative;
+    z-index:100;
+    padding-top:500px;
+    undefined:undefined;
+  }
+  .section{
+    padding:20px;
+    text-align:center;
+  }
+  .section-light{
+    background-color:rgba(255, 255, 255, 0.9);
+    margin:20px;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+  }
+  .gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+  .gallery-item{
+    width:min(320px, 90vw);
+    margin:10px;
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    transition:transform 0.3s ease;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    text-align:left;
+  }
+  .gallery-item:hover{
+    transform:translateY(-5px);
+  }
+  .gallery-image{
+    width:100%;
+    height:auto;
+    display:block;
+  }
+  .gallery-item p{
+    margin:10px 12px;
+  }
+  .gallery-item p:first-of-type{
+    font-weight:700;
+  }
+  .footer{
+    background-color:#ED4264;
+    color:white;
+    padding:20px;
+    text-align:center;
+  }
+  @media (max-width: 640px){
+    .header h1{
+      font-size:48px;
+    }
+    .header p{
+      font-size:24px;
+      transform:none;
+    }
+    .main-content{
+      padding-top:320px;
+    }
+  }
+</style>
